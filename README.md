@@ -1,5 +1,5 @@
 # AccuKnox_Task
-Django Signals
+# Django Signals
 
 Question 1: By default are django signals executed synchronously or asynchronously?
 
