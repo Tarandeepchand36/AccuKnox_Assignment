@@ -26,7 +26,7 @@ Compare the Thread Names: Finally, check the thread name when you executed the a
 
 In summary, this behavior is crucial because it allows your signal handlers to function correctly within the same execution context, making them more predictable and reliable.
 
-#Do Django Signals Run in the Same Database Transaction as the Caller?
+# Do Django Signals Run in the Same Database Transaction as the Caller?
 When it comes to Django signals and database transactions, the answer is yes—by default, Django signals run in the same database transaction as the caller. This behavior is important for maintaining data integrity and consistency within your application.
 
 Let’s break this down a bit: When you perform a database operation, such as saving a model instance, Django wraps that operation in a transaction. If the operation is successful, the transaction is committed, meaning the changes are saved to the database. However, if there’s an error, the transaction is rolled back, and none of the changes are applied.
