@@ -1,7 +1,7 @@
 
 # By default are django signals executed synchronously or asynchronously?
 
-Django signals are executed synchronously by default. When a signal is triggered, its connected receiver functions run immediately in the same thread, blocking any further execution until they complete. This behavior ensures that any dependent processes can be handled in a predictable manner. You can check this by observing the execution order in your application logs or console output.
+Django signals are executed synchronously by default. When a signal is triggered, its connected receiver functions run immediately in the same thread, blocking any further execution until they complete. This behavior ensures that any dependent processes can be handled in a predictable manner. You can check this by observing the execution order in the application logs or console output.
 
 When you send a signal, the connected receiver functions are invoked in the order they were connected. The main application thread waits for these functions to finish executing before continuing. This synchronous behavior ensures that any operations dependent on the signal's processing are completed before proceeding.
 
